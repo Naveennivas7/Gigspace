@@ -17,7 +17,27 @@ header {
   padding: 15px 50px;
   background-color: #b6ccc8;
 }
+.location {
+  font-size: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.location input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 14px;
+  flex: 1;
+}
 .logo {
   font-size: 24px;
   font-weight: bold;
