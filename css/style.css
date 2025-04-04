@@ -274,3 +274,11 @@ nav ul li a {
   justify-content: center;
   cursor: pointer;
 }
+.demo-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
