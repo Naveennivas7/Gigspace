@@ -11,11 +11,7 @@ body {
 
 /* Header Styles */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #b6ccc8;
+  
 }
 .location {
   font-size: 16px;
