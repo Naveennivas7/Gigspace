@@ -1,6 +1,4 @@
-body{
-    /* overflow: scroll; */
-}
+
 
 a{
     text-decoration: none;
@@ -47,7 +45,12 @@ header nav ul li{
 header nav ul li a{
     color:white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
 }
 .logo img {
     height: 30px;
@@ -66,5 +69,19 @@ header .btn-group{
 
 }
 header .btn-group a{
-    
+    margin-left: 1rem;
+}
+
+header .btn-group a button{
+    cursor:pointer;
+    background-color: #62d8d8;
+    padding: 12px 25px;
+    border:none;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 5px #deeceb;
+    color: white;
+}
+header .btn-group a button:hover{
+    background-color: #ccaf5a;
+    transition: 0.3s;
 }
