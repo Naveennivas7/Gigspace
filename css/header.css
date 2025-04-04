@@ -1,7 +1,7 @@
 header{
     width:100%;
     height: 5rem;
-    background-color: #27a08c;
+    background-color: #1F2833;
     display:flex;
     margin-right:2rem;
     position:fixed;
@@ -23,6 +23,12 @@ header{
     width:100%;
     height:100%;
 }
+
+.logo img{
+  
+    width: 50px;
+    height: 50px;
+}
 header nav ul li{
     list-style: none;
     display: inline-block;
@@ -30,7 +36,7 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color:white;
+    color:#66fcf1;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -42,6 +48,12 @@ header nav ul li a{
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: #66fcf1;
     text-decoration: none;
   }
+.location{
+    color:#66fcf1;
+    font-size: 1rem;
+    display:flex;
+    align-items:center;
+}
