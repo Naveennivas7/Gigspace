@@ -10,26 +10,7 @@ body {
 }
 
 /* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #b6ccc8;
-}
-.location {
-  font-size: 16px;
-  color: white;
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin-right: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+
 
 .location input {
   border: none;
@@ -38,42 +19,7 @@ header {
   font-size: 14px;
   flex: 1;
 }
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
 
-.logo img {
-  height: 30px;
-  margin-right: 10px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.sign-in-btn {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  padding: 8px 20px;
-  color: white;
-  text-decoration: none;
-}
 
 /* Main Content Styles */
 .main-content {
