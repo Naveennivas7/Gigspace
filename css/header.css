@@ -14,10 +14,13 @@ header {
     height: 5rem;
     background-color: #27a08c;
     display: flex;
-    position: fixed;
     justify-content: space-between;
-
     align-items: center;
+    /* position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
 }
 
 .sidebar {
@@ -68,6 +71,19 @@ nav ul li a:hover {
     color: white;
     text-decoration: none;
 }
+.location {
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
 header .btn-group {
     margin-right: 1.5rem;
