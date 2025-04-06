@@ -1,3 +1,18 @@
 .main{
     margin-top: 6rem;
+    /* display:flex; */
+    justify-content: center;
+}
+.searchbar-div{
+    width: 100%;
+    padding: 0 10rem;
+}
+.searchbar-div input{
+    height: 4rem;
+    width: 90%;
+}
+.searchbar-div button{
+    margin-left: 1rem;
+    border-radius: 65%;
+    height: 4rem;
 }
