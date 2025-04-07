@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signUp.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up As</h2>
+    <div class="role-select">
+      <button id="customerBtn">Customer</button>
+      <button id="workerBtn">Worker</button>
+    </div>
+
+    <!-- Customer Sign Up Form -->
+    <form id="customerForm">
+      <div class="form-group">
+        <label for="cust-name">Full Name</label>
+        <input type="text" id="cust-name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required />
+      </div>
+      <div class="form-group">
+        <label for="cust-email">Email</label>
+        <input type="email" id="cust-email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid Gmail address" required />
+      </div>
+      <div class="form-group">
+        <label for="cust-phone">Phone Number</label>
+        <input type="tel" id="cust-phone" pattern="\d{10}" title="Please enter a valid 10-digit phone number" required />
+      </div>
+      <div class="form-group">
+        <label for="cust-password">Password</label>
+        <input type="password" id="cust-password" required />
+      </div>
+      <div class="form-group">
+        <label for="cust-confirm-password">Confirm Password</label>
+        <input type="password" id="cust-confirm-password" required />
+      </div>
+      <button type="submit" class="signup-btn">Sign Up as Customer</button>
+    </form>
+
+    <!-- Worker Sign Up Form -->
+    <form id="workerForm">
+      <div class="form-group">
+        <label for="worker-name">Full Name</label>
+        <input type="text" id="worker-name" required />
+      </div>
+      <div class="form-group">
+        <label for="worker-email">Email</label>
+        <input type="email" id="worker-email" required />
+      </div>
+      <div class="form-group">
+        <label for="worker-phone">Phone Number</label>
+        <input type="tel" id="worker-phone" pattern="\d{10}" title="Please enter a valid 10-digit phone number" required />
+      </div>
+
+      <div class="form-group">
+        <label for="worker-password">Password</label>
+        <input type="password" id="worker-password" required />
+      </div>
+      <div class="form-group">
+        <label for="worker-confirm-password">Confirm Password</label>
+        <input type="password" id="worker-confirm-password" required />
+      </div>
+      <div class="form-group">
+        <label for="worker-skill">Skill/Profession</label>
+        <input type="text" id="worker-skill" required />
+      </div>
+      <button type="submit" class="signup-btn">Sign Up as Worker</button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="../SignIn/SignIn.html">Login here</a>
+    </div>
+  </div>
+
+  <script>
+    const customerBtn = document.getElementById('customerBtn');
+    const workerBtn = document.getElementById('workerBtn');
+    const customerForm = document.getElementById('customerForm');
+    const workerForm = document.getElementById('workerForm');
+
+    customerBtn.addEventListener('click', () => {
+      customerForm.style.display = 'flex';
+      workerForm.style.display = 'none';
+      customerBtn.classList.add('active');
+      workerBtn.classList.remove('active');
+    });
+
+    workerBtn.addEventListener('click', () => {
+      workerForm.style.display = 'flex';
+      customerForm.style.display = 'none';
+      workerBtn.classList.add('active');
+      customerBtn.classList.remove('active');
+    });
+
+    // Redirect to main.html on form submission
+    customerForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      window.location.href ="../main.html";
+    });
+
+    workerForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      window.location.href = "../main.html";
+    });
+  </script>
+</body>
+</html>
