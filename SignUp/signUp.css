@@ -85,3 +85,51 @@ form {
   text-decoration: none;
   color: #007bff;
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: none;
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.navigation {
+  text-align: left;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-img {
+  width: 50px; /* Adjust image size as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.btn-img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
