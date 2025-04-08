@@ -16,3 +16,18 @@
     border-radius: 65%;
     height: 4rem;
 }
+.electriction-img{
+    width: 211.3px;
+    height: 337.4px;
+    border-radius: 22px;
+}
+.painter-img{
+    margin-left: 50px;
+    width: px;
+    height: 337.4px;
+    border-radius: 22px;
+}
+.main-content-left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;}
