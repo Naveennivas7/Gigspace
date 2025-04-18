@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleaning Services</title>
+  <link rel="stylesheet" href="./cleaning.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🧹 Cleaning Services</h1>
+    <nav>
+      <a href="../../main.html">Home</a>
+      <a href="../Plumbing/plumbing.html">Plumbing</a>
+      <a href="../Electrician/electrician.html">Electrician</a>
+      <a href="../Carpenter/carpenter.html">Carpenter</a>
+      <a href="../Mechanic/mechanic.html">Mechanic</a>
+      <a href="../Painting/painting.html">Painting</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Professional Cleaning at Your Doorstep</h2>
+      <p>We provide top-quality home and office cleaning services. Whether it’s daily housekeeping or deep cleaning, we’ve got you covered.</p>
+    </section>
+
+    <section class="services">
+      <h3>Our Cleaning Services Include:</h3>
+      <ul>
+        <li>✅ Home Deep Cleaning</li>
+        <li>✅ Office Cleaning</li>
+        <li>✅ Bathroom & Kitchen Cleaning</li>
+        <li>✅ Sofa & Carpet Cleaning</li>
+        <li>✅ Window & Glass Cleaning</li>
+      </ul>
+    </section>
+
+    <section class="booking">
+      <h3>Book a Cleaning Appointment</h3>
+      <form>
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="date">Preferred Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+
+        <label for="details">Additional Details:</label><br />
+        <textarea id="details" name="details"></textarea><br />
+
+        <button type="submit" onclick="thankYouRedirect()">Submit</button>
+        <script>
+          function thankYouRedirect() {
+            alert('Thank you for your submission!We will Contact You Soon.');
+            window.location.href = '../../main.html';
+          }
+        </script>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gigzz. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

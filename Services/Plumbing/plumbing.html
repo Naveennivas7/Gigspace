@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plumbing Services</title>
+  <link rel="stylesheet" href="./plumbing.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🔧 Plumbing Services</h1>
+    <nav>
+      <a href="../../main.html">Home</a>
+      <a href="../Cleaning/cleaning.html">Cleaning</a>
+      <a href="../Electrician/electrician.html">Electrician</a>
+      <a href="../Carpenter/carpenter.html">Carpenter</a>
+      <a href="../Mechanic/mechanic.html">Mechanic</a>
+      <a href="../Painting/painting.html">Painting</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Reliable Plumbing, Anytime</h2>
+      <p>We offer professional plumbing solutions for homes, offices, and commercial spaces. From leaky taps to complete pipe replacements—we do it all!</p>
+    </section>
+
+    <section class="services">
+      <h3>Our Plumbing Services Include:</h3>
+      <ul>
+        <li>✅ Tap & Faucet Repairs</li>
+        <li>✅ Bathroom & Kitchen Fittings</li>
+        <li>✅ Water Leakage Fixes</li>
+        <li>✅ Drain Cleaning</li>
+        <li>✅ Pipe Installation & Replacement</li>
+      </ul>
+    </section>
+
+    <section class="booking">
+      <h3>Book a Plumbing Appointment</h3>
+      <form>
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="date">Preferred Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+
+        <label for="details">Additional Details:</label><br />
+        <textarea id="details" name="details"></textarea><br />
+
+        <button type="submit" onclick="thankYouRedirect()">Submit</button>
+        <script>
+          function thankYouRedirect() {
+            alert('Thank you for your submission!We will Contact You Soon.');
+            window.location.href = '../../main.html';
+          }
+        </script>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gigzz. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

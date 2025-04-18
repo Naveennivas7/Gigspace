@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/body.css">
+	<link rel="icon" href="./assets/fav.icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 
 <body>
@@ -25,14 +28,26 @@
 			<ul>
 				<li><a href="#" class="navitems"><img class="navicon" src="./assets/icons/homepageicon (2).svg" alt="homelogo" /><p style="margin-left: 4px;">Home</p></a></li>
 				<li><a href="./About/about.html" class="navitems"><img class="navicon" src="./assets/icons/abouticon.svg" alt="aboutlogo" /><p style="margin-left: 4px;">About</p></a></li>
-				<li><a href="#" class="navitems"><img class="navicon" src="./assets/icons/serviceicon.svg" alt="aboutlogo" /><p style="margin-left: 4px;">Services</p></a></li>
-				<li><a href="#" class="navitems"><img class="navicon" src="./assets/icons/contactsicon.svg" alt="aboutlogo" /><p style="margin-left: 4px;">Contact</p></a></li>
+				<li>
+					<a href="#" class="navitems" onclick="openServicesModal()">
+					  <img class="navicon" src="./assets/icons/serviceicon.svg" alt="servicelogo" />
+					  <p style="margin-left: 4px;">Services</p>
+					</a>
+				  </li>
+				  
+				<li><a href="./Contact/contact.html" class="navitems"><img class="navicon" src="./assets/icons/contactsicon.svg" alt="aboutlogo" /><p style="margin-left: 4px;">Contact</p></a></li>
 			</ul>
 		</nav>
 		
 		<div class="location">
-			<img src="./assets/location_logo.svg.svg" width="20" height="20" />
-			<p style="margin-left: 10px;">Nungambakkam, Chennai</p>
+			<button id="location-btn" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+				<i class="fa fa-map-marker"></i>
+				<span id="location-text">Location</span>
+				<span id="location-spinner" style="display: none;">
+				  <i class="fa fa-spinner fa-spin"></i>
+				</span>
+			</button>
+			<script src =location.js></script>
 		</div>
 		<div class="btn-group">
 			<a href="./SignIn/signIn.html" class="sign-in-btn">
@@ -105,7 +120,26 @@
 					}
 				</style>
 	</main>
-
+<!-- Services Modal -->
+<div id="servicesModal" class="modal">
+	<div class="modal-content">
+	  <span class="close" onclick="closeServicesModal()">&times;</span>
+	  <h2>Our Services</h2>
+	  <input type="text" id="serviceSearch" onkeyup="searchServices()" placeholder="Search for services..." class="search-bar">
+	  
+	  <div class="service-list">
+		<a href="./Services/Cleaning/cleaning.html" class="service-item">🧹 Cleaning</a>
+		<a href="./Services/Plumbing/plumbing.html" class="service-item">🔧 Plumbing</a>
+		<a href="./Services/Electrician/electrician.html" class="service-item">⚡ Electrician</a>
+		<a href="./Services/Carpenter/carpenter.html" class="service-item">🪑 Carpenter</a>
+		<a href="./Services/Mechanic/mechanic.html" class="service-item">🛠 Mechanic</a>
+		<a href="./Services/Painting/painting.html" class="service-item">🏠 Painting</a>
+	  </div>
+	</div>
+  </div>
+  <link rel="stylesheet" href="./Services/service.css">
+  <script src="./Services/service.js"></script>
+	
 
 </body>
 
